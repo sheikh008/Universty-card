@@ -1,0 +1,69 @@
+import React from 'react';
+import { StyleSheet, Text, View, Image } from 'react-native';
+
+
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <View style={styles.card}>
+        <View style={{ flexDirection: 'row', paddingHorizontal: 20 }}>
+          <Image
+            style={styles.logo}
+            source={require('./assests/images/logo.png')} />
+          <Text style={{ textAlign: 'right', flex: 1, fontSize: 28,color:'#fff' }}> PMAS UARR </Text>
+        
+        </View>
+        <Image
+          style={styles.profile}
+          source={require('./assests/images/profile.jpeg')} />
+        <Text style={{ textAlign: 'center', fontSize: 18,color:'#fff' }}> Haris Naeem </Text>
+        <Text style={{ textAlign: 'center', fontSize: 18,color:'#fff' }}> 19-ARID-1242 </Text>
+        <Text style={{ textAlign: 'center', fontSize: 18,color:'#fff' }}> BSSE </Text>
+        <Text style={{ textAlign: 'center', fontSize: 18,color:'#fff' }}> (Evening) </Text>
+
+        <Text style={{ textAlign: 'center', fontSize: 28, marginTop: 30,color:'#fff' }}> UIIT </Text>
+
+
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff'
+  },
+  card: {
+    backgroundColor: '#6432ed',
+    width: '85%',
+    borderRadius: 15,
+    padding: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.34,
+    shadowRadius: 6.27,
+
+    elevation: 10,
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    borderRadius:105,
+    backgroundColor:'#fff'
+  },
+  profile: {
+    width: 170,
+    height: 170,
+    resizeMode: 'stretch',
+    alignSelf: 'center',
+    marginTop: 20,
+  }
+});
+
